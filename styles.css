@@ -1,0 +1,357 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 🔝 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f1c40f;
+}
+
+/* 🏠 Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  background: #f6f8fa;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  flex: 1 1 400px;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0a3d62;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+  background-color: #0a3d62;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+.hero-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* 🎓 Programs */
+.programs {
+  background-color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.programs h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0a3d62;
+}
+
+.program-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.card {
+  background-color: #f1f1f1;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  /* ✅ Make button stay at bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px; /* ensures equal height */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0a3d62;
+}
+
+/* ✅ Button inside cards */
+.card .cta-btn {
+  margin-top: auto; /* pushes button down */
+  background-color: #0a3d62;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.card .cta-btn:hover {
+  background-color: #05406e;
+}
+
+/* 🏫 Campus Life */
+.campus-life {
+  background-color: #f6f8fa;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.campus-life h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0a3d62;
+}
+
+.campus-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.campus-icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0a3d62;
+}
+
+.campus-icons i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 📞 Footer */
+footer {
+  background-color: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer-content p {
+  margin-bottom: 0.5rem;
+}
+
+.social-icons {
+  margin: 1rem 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f1c40f;
+}
+
+/* 📌 Admissions Page Background */
+.admission-bg {
+  background: url("images/admissions-bg.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Admission Section Box */
+.admission-section {
+  background: rgba(0,0,0,0.6);
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 1100px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* Fees Table */
+.fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255,255,255,0.1);
+}
+
+.fees-table th,
+.fees-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.fees-table th {
+  background: #444;
+  color: #ffd700;
+}
+
+.fees-table tr:nth-child(even) {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Admission Extra Section */
+.admission-extra {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* Info Card */
+.info-card {
+  flex: 1;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.info-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Admission Form */
+.application-form {
+  flex: 1;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.application-form h3 {
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.application-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.application-form input,
+.application-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.application-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #ffd700;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.application-form button:hover {
+  background: #e6c200;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .program-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .campus-icons {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .admission-extra {
+    flex-direction: column;
+  }
+}
